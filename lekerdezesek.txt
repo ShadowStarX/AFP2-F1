@@ -1,0 +1,2 @@
+CREATE TABLE `formulaone`.`pilotak` (`rajtszam` INT(2) NOT NULL , `nev` VARCHAR(40) NOT NULL , `orszag` VARCHAR(40) NOT NULL , `szulido` DATE NOT NULL , PRIMARY KEY (`rajtszam`)) ENGINE = InnoDB;
+
