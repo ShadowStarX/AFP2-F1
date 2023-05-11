@@ -71,33 +71,60 @@ header:after{
 .track0{
     position: absolute;
     bottom: -100px;
-    width: 1650px;
+    width: 1800px;
     right: 0;
 }
 
 .track1{
     position: absolute;
     bottom: -100px;
-    width: 1650px;
+    width: 2000px;
     left: 0;
     z-index: 19;
 }
 
 .track2{
     position: absolute;
-    width: 1650px;
-    bottom: 300px;
+    width:  904.3px;
+    top: -60.8px;
+    left: -1.5px;
+    z-index: 18;
+}
+
+.track3{
+    position: absolute;
+    width: 2000px;
+    top: -60px;
+    left: 0;
+    z-index: 17;
+}
+
+/*  1. VERZIÓS HEADER
+.track1{
+    position: absolute;
+    bottom: -100px;
+    width: 1800px;
+    left: 0;
+    z-index: 19;
+}
+
+.track2{
+    position: absolute;
+    width: 1800px;
+    bottom: 340px;
     left: 0;
     z-index: 18;
 }
 
 .track3{
     position: absolute;
-    width: 1650px;
-    bottom: 300px;
+    width: 1800px;
+    bottom: 340px;
     left: 0;
     z-index: 17;
 }
+
+*/
 
 nav{
     position: absolute;
