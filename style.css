@@ -136,7 +136,7 @@ nav .container{
     transform: translateY(8px);
 }
 
-.big-title{
+.f1 header img{
     position: absolute;
     z-index: 30;
     line-height: 4rem;
