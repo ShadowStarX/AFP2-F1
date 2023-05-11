@@ -34,72 +34,69 @@ header:after{
     z-index: 25;
 }
 
+/*
+.f1{
+   position: absolute;
+    width: 500px;
+    top: 35%;
+    left: 46%;
+    z-index: 20; 
+   /* position: absolute;
+    z-index: 30;
+    line-height: 4rem;
+    top: calc(50% - 2rem);
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fff; 
+} */
+
 .hamilton{
     position: absolute;
-    width: 650px;
-    bottom: -100px;
-    right: -20px;
-    z-index: 20;
+    width: 800px;
+    bottom: 0px;
+    left: 73px;  
+    z-index: 22;
 }
 
 .massa{
     position: absolute;
-    width: 650px;
+    width: 450px;
+    bottom: -220px;
+    right: 205px;
+    z-index: 21;
+}
+
+.track0{
+    position: absolute;
     bottom: -100px;
-    right: -20px;
-    z-index: 20;
+    width: 1650px;
+    right: 0;
 }
 
 .track1{
     position: absolute;
     bottom: -100px;
-    width: 1500px;
-    right: 0;
+    width: 1650px;
+    left: 0;
     z-index: 19;
 }
 
 .track2{
     position: absolute;
-    width: 1100px;
-    bottom: -100px;
+    width: 1650px;
+    bottom: 300px;
     left: 0;
     z-index: 18;
 }
 
 .track3{
     position: absolute;
-    width: 900px;
-    bottom: 150px;
-    right: 0;
+    width: 1650px;
+    bottom: 300px;
+    left: 0;
     z-index: 17;
-}
-
-.track4{
-    position: absolute;
-    width: 2100px;
-    bottom: 250px;
-    right: 0;
-}
-
-.track5{
-    position: absolute;
-    width: 2100px;
-    bottom: 250px;
-    right: 0;
-}
-
-.track6{
-    position: absolute;
-    width: 2100px;
-    bottom: 250px;
-    right: 0;
-}
-
-.track7{
-    position: absolute;
-    width: 2100px;
-    bottom: 250px;
-    right: 0;
 }
 
 nav{
@@ -165,17 +162,6 @@ nav .container{
     transform: translateY(8px);
 }
 
-.f1 header img{
-    position: absolute;
-    z-index: 30;
-    line-height: 4rem;
-    top: calc(50% - 2rem);
-    width: 100%;
-    text-align: center;
-    font-size: 5rem;
-    font-weight: 600;
-    color: #fff;
-}
 
 section{
     width: 100%;
