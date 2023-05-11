@@ -42,7 +42,7 @@ header:after{
     z-index: 19;
 }
 
-.person{
+.pilot{
     position: absolute;
     width: 650px;
     bottom: -100px;
