@@ -40,7 +40,6 @@ CREATE TABLE `eredmenyek` (
 INSERT INTO `eredmenyek` (`palya`, `helyezes`, `pilota`) VALUES
 (1, 0, 22),
 (1, 1, 22);
-
 -- --------------------------------------------------------
 
 --
@@ -63,6 +62,7 @@ INSERT INTO `konstruktorok` (`id`, `csapat`, `orszag`, `egyikpilota`, `masikpilo
 (1, 'Ferrari', 'Olaszország', 1, 2),
 (2, 'McLaren', 'Egyesült Királyság', 22, 23);
 
+
 -- --------------------------------------------------------
 
 --
@@ -83,7 +83,6 @@ CREATE TABLE `nagydijak` (
 INSERT INTO `nagydijak` (`id`, `orszag`, `palya`, `hossz`) VALUES
 (1, 'Ausztrália', 'Albert Park', 5278),
 (2, 'Malajzia', 'Sepang', 5543);
-
 -- --------------------------------------------------------
 
 --
@@ -106,7 +105,6 @@ INSERT INTO `pilotak` (`rajtszam`, `nev`, `orszag`, `szulido`) VALUES
 (2, 'Felipe Massa', 'Brazília', '1981-04-25'),
 (22, 'Lewis Hamilton', 'Egyesült Királyság', '1985-01-07'),
 (23, 'Heikki Kovalainen', 'Finnország', '1981-10-19');
-
 -- --------------------------------------------------------
 
 --
@@ -119,9 +117,6 @@ CREATE TABLE `pontszamitas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `pontszamitas`
---
-
 INSERT INTO `pontszamitas` (`helyezes`, `pontok`) VALUES
 (1, 10),
 (2, 8),
