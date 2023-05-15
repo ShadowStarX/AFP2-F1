@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:4306
--- Generation Time: May 10, 2023 at 09:11 PM
+-- Generation Time: May 15, 2023 at 08:16 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -33,6 +33,14 @@ CREATE TABLE `eredmenyek` (
   `pilota` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `eredmenyek`
+--
+
+INSERT INTO `eredmenyek` (`palya`, `helyezes`, `pilota`) VALUES
+(1, 0, 22),
+(1, 1, 22);
+
 -- --------------------------------------------------------
 
 --
@@ -47,6 +55,14 @@ CREATE TABLE `konstruktorok` (
   `masikpilota` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `konstruktorok`
+--
+
+INSERT INTO `konstruktorok` (`id`, `csapat`, `orszag`, `egyikpilota`, `masikpilota`) VALUES
+(1, 'Ferrari', 'Olaszország', 1, 2),
+(2, 'McLaren', 'Egyesült Királyság', 22, 23);
+
 -- --------------------------------------------------------
 
 --
@@ -59,6 +75,14 @@ CREATE TABLE `nagydijak` (
   `palya` varchar(60) NOT NULL,
   `hossz` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `nagydijak`
+--
+
+INSERT INTO `nagydijak` (`id`, `orszag`, `palya`, `hossz`) VALUES
+(1, 'Ausztrália', 'Albert Park', 5278),
+(2, 'Malajzia', 'Sepang', 5543);
 
 -- --------------------------------------------------------
 
@@ -79,7 +103,9 @@ CREATE TABLE `pilotak` (
 
 INSERT INTO `pilotak` (`rajtszam`, `nev`, `orszag`, `szulido`) VALUES
 (1, 'Kimi Räikkönen', 'Finnország', '1979-10-17'),
-(2, 'Felipe Massa', 'Brazília', '1981-04-25');
+(2, 'Felipe Massa', 'Brazília', '1981-04-25'),
+(22, 'Lewis Hamilton', 'Egyesült Királyság', '1985-01-07'),
+(23, 'Heikki Kovalainen', 'Finnország', '1981-10-19');
 
 -- --------------------------------------------------------
 
@@ -91,6 +117,20 @@ CREATE TABLE `pontszamitas` (
   `helyezes` int(2) NOT NULL,
   `pontok` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pontszamitas`
+--
+
+INSERT INTO `pontszamitas` (`helyezes`, `pontok`) VALUES
+(1, 10),
+(2, 8),
+(3, 6),
+(4, 5),
+(5, 4),
+(6, 3),
+(7, 2),
+(8, 1);
 
 --
 -- Indexes for dumped tables
