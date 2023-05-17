@@ -272,3 +272,30 @@ section .container > *{
         font-size: 1.2rem;
     }
 }
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Table header */
+  th {
+    background-color: #a10f0f7e;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+
+  tr:hover {
+    background-color: #383838;
+  }
+  
+  /* Table cells */
+  td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
