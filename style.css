@@ -299,3 +299,7 @@ table {
     padding: 8px;
     border: 1px solid #ccc;
   }
+
+  .page_img {
+    border: 4px solid white;
+  }
