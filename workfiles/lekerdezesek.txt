@@ -7,3 +7,7 @@ CREATE TABLE `formulaone`.`eredmenyek` (`palya` INT(2) NOT NULL , `helyezes` INT
 CREATE TABLE `formulaone`.`konstruktorok` (`id` INT(2) NOT NULL , `csapat` VARCHAR(40) NOT NULL , `orszag` VARCHAR(40) NOT NULL , `egyikpilota` INT(2) NOT NULL , `masikpilota` INT(2) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
 
 CREATE TABLE `formulaone`.`nagydijak` (`id` INT(2) NOT NULL , `orszag` VARCHAR(40) NOT NULL , `palya` VARCHAR(60) NOT NULL , `hossz` INT(4) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+
+SELECT rajtszam, nev, csapat FROM pilotak
+INNER JOIN konstruktorok ON rajtszam IN (egyikpilota, masikpilota)
