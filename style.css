@@ -55,8 +55,8 @@ header:after{
 .hamilton{
     position: absolute;
     width: 800px;
-    bottom: 0px;
-    left: 73px;  
+    bottom: -220px;
+    left: 155px;  
     z-index: 22;
 }
 
@@ -64,7 +64,7 @@ header:after{
     position: absolute;
     width: 450px;
     bottom: -220px;
-    right: 205px;
+    right: 215px;
     z-index: 21;
 }
 
