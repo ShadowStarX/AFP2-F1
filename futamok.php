@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Futamok</title>
     <link rel="stylesheet" href="style.css">
+    <?php include('dbconn.php');?>
 </head>
 <body>
     <header>
@@ -17,9 +18,9 @@
               </div>
               <ul class="menu">
                 <li><a href="index.html">Kezdőlap</a></li>
-                <li><a href="pilotak.html">Pilóták</a></li>
-                <li><a href="konstruktorok.html">Konstruktőrök</a></li>
-                <li><a href="futamok.html">Futamok</a></li>
+                <li><a href="pilotak.php">Pilóták</a></li>
+                <li><a href="konstruktorok.php">Konstruktőrök</a></li>
+                <li><a href="futamok.php">Futamok</a></li>
               </ul>
             </div>
           </nav>          
@@ -53,20 +54,26 @@
                 </h3>
                 <table>
                     <tr>
-                      <th>X</th>
-                      <th>Y</th>
-                      <th>Z</th>
-                    </tr>
-                    <tr>
-                      <td>.</td>
-                      <td>.</td>
-                      <td>.</td>
-                    </tr>
-                    <tr>
-                      <td>.</td>
-                      <td>.</td>
-                      <td>.</td>
-                    </tr>
+                      <th>Ország</th>
+                      <th>Pálya</th>
+                      <th>Hossz</th>
+                    </tr>               
+                    <?php 
+                      $sql = "SELECT orszag, palya, hossz FROM nagydijak";
+                      $result = $connection->query($sql);
+                      if(!$result){
+                        die("Invalid query: " . $connection->error);
+                      }
+                      while($row = $result->fetch_assoc()){
+                      echo "
+                        <tr>
+                          <td>". utf8_encode($row["orszag"]) ."</td>
+                          <td>". utf8_encode($row["palya"]) ."</td>
+                          <td>". $row["hossz"] ."</td>
+                        </tr>
+                      ";
+                      }
+                  ?>
                   </table> 
             </div>
 
