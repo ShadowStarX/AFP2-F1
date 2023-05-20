@@ -18,7 +18,7 @@
               </div>
               <ul class="menu">
                 <li><a href="index.html">Kezdőlap</a></li>
-                <li><a href="pilotak.html">Pilóták</a></li>
+                <li><a href="pilotak.php">Pilóták</a></li>
                 <li><a href="konstruktorok.html">Konstruktőrök</a></li>
                 <li><a href="futamok.html">Futamok</a></li>
               </ul>
@@ -52,25 +52,30 @@
                     Pilóták
                     <div class="border"></div>
                 </h3>
-                <table>
+                <table>     
                     <tr>
                       <th>Rajtszám</th>
                       <th>Név</th>
                       <th>Ország</th>
                       <th>Születési idő</th>
                     </tr>
-                    <tr>
-                      <td>.</td>
-                      <td>.</td>
-                      <td>.</td>
-                      <td>.</td>
-                    </tr>
-                    <tr>
-                      <td>.</td>
-                      <td>.</td>
-                      <td>.</td>
-                      <td>.</td>
-                    </tr>
+                  <?php 
+                    $sql = "SELECT rajtszam, nev, orszag, szulido FROM pilotak";
+                    $result = $connection->query($sql);
+                    if(!$result){
+                      die("Invalid query: " . $connection->error);
+                    }
+                    while($row = $result->fetch_assoc()){
+                      echo "
+                        <tr>
+                          <td>". $row["rajtszam"] ."</td>
+                          <td>". utf8_encode($row["nev"]) ."</td>
+                          <td>". utf8_encode($row["orszag"]) ."</td>
+                          <td>". $row["szulido"] ."</td>
+                        </tr>
+                      ";
+                    }
+                  ?>
                   </table> 
             </div>
 
