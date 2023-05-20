@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Egyéni VB</title>
     <link rel="stylesheet" href="style.css">
+    <?php include('dbconn.php');?>
 </head>
 <body>
     <header>
@@ -53,16 +54,19 @@
                 </h3>
                 <table>
                     <tr>
-                      <th>X</th>
-                      <th>Y</th>
-                      <th>Z</th>
+                      <th>Rajtszám</th>
+                      <th>Név</th>
+                      <th>Ország</th>
+                      <th>Születési idő</th>
                     </tr>
                     <tr>
                       <td>.</td>
                       <td>.</td>
                       <td>.</td>
+                      <td>.</td>
                     </tr>
                     <tr>
+                      <td>.</td>
                       <td>.</td>
                       <td>.</td>
                       <td>.</td>
