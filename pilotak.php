@@ -20,7 +20,7 @@
                 <li><a href="index.html">Kezdőlap</a></li>
                 <li><a href="pilotak.php">Pilóták</a></li>
                 <li><a href="konstruktorok.php">Konstruktőrök</a></li>
-                <li><a href="futamok.html">Futamok</a></li>
+                <li><a href="futamok.php">Futamok</a></li>
               </ul>
             </div>
           </nav>          
