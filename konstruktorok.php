@@ -74,7 +74,7 @@
                           echo "
                           <tr>
                             <td rowspan='2'>". $row["csapat"] ."</td>
-                            <td rowspan='2'>". utf8_encode($row["c"]) ."</td>
+                            <td rowspan='2'>". $row["c"] ."</td>
                             <td>". $row["rajtszam"] ."</td>
                             <td>". $row["nev"] ."</td>
                           </tr>
