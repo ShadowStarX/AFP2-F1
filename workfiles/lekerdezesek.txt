@@ -11,3 +11,10 @@ CREATE TABLE `formulaone`.`nagydijak` (`id` INT(2) NOT NULL , `orszag` VARCHAR(4
 
 SELECT rajtszam, nev, csapat FROM pilotak
 INNER JOIN konstruktorok ON rajtszam IN (egyikpilota, masikpilota)
+
+SELECT rajtszam, nev, Sum(pontszamitas.pontok) AS pontok FROM eredmenyek
+INNER JOIN nagydijak ON eredmenyek.palya = nagydijak.id
+INNER JOIN pilotak ON eredmenyek.pilota = pilotak.rajtszam
+INNER JOIN pontszamitas ON eredmenyek.helyezes = pontszamitas.helyezes
+GROUP BY rajtszam, nev
+ORDER BY pontok DESC

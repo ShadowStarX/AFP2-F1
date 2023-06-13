@@ -56,8 +56,38 @@
                   <tr>
                     <th>Csapat</th>
                     <th>Ország</th>
+                    <th>Rajtszám</th>
                     <th>Pilóták</th>
                   </tr>
+                  <?php 
+                      $sql = "SELECT csapat, konstruktorok.orszag AS c, rajtszam, nev FROM konstruktorok
+                              INNER JOIN pilotak ON rajtszam IN (egyikpilota, masikpilota)";
+                      $result = $connection->query($sql);
+                      if(!$result){
+                        die("Invalid query: " . $connection->error);
+                      }
+                      
+                      
+                      while($row = $result->fetch_assoc()){
+                        $rsz = $row["rajtszam"];
+                        if (($rsz < 13 && $rsz % 2 == 1) || ($rsz > 13 && $rsz % 2 == 0)) {
+                          echo "
+                          <tr>
+                            <td rowspan='2'>". $row["csapat"] ."</td>
+                            <td rowspan='2'>". utf8_encode($row["c"]) ."</td>
+                            <td>". utf8_encode($row["rajtszam"]) ."</td>
+                            <td>". utf8_encode($row["nev"]) ."</td>
+                          </tr>
+                        ";
+                        }
+                        else {
+                          echo "
+                            <tr><td>". utf8_encode($row["rajtszam"]) ."</td>
+                            <td>". utf8_encode($row["nev"]) ."</td></tr>
+                          ";
+                        }
+                      }
+                  ?>
                   </table> 
             </div>
 
