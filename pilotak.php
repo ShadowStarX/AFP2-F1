@@ -54,24 +54,36 @@
                 </h3>
                 <table>     
                   <tr>
+                    <th>Helyezés</th>
                     <th>Rajtszám</th>
                     <th>Név</th>
                     <th>Ország</th>
                     <th>Születési idő</th>
+                    <th>Pontszám</th>
                   </tr>
                     <?php 
-                      $sql = "SELECT rajtszam, nev, orszag, szulido FROM pilotak";
+                      $sql = "SELECT rajtszam, nev, pilotak.orszag AS porszag, szulido,
+                              Sum(pontszamitas.pontok) AS pontok FROM eredmenyek
+                              INNER JOIN nagydijak ON eredmenyek.palya = nagydijak.id
+                              INNER JOIN pilotak ON eredmenyek.pilota = pilotak.rajtszam
+                              INNER JOIN pontszamitas ON eredmenyek.helyezes = pontszamitas.helyezes
+                              GROUP BY rajtszam, nev
+                              ORDER BY pontok DESC";
                       $result = $connection->query($sql);
                       if(!$result){
                         die("Invalid query: " . $connection->error);
                       }
+                      $ranking = 0;
                       while($row = $result->fetch_assoc()){
+                        $ranking = $ranking + 1;
                       echo "
                         <tr>
+                          <td>". $ranking ."</td>
                           <td>". $row["rajtszam"] ."</td>
-                          <td>". utf8_encode($row["nev"]) ."</td>
-                          <td>". utf8_encode($row["orszag"]) ."</td>
+                          <td>". $row["nev"] ."</td>
+                          <td>". $row["porszag"] ."</td>
                           <td>". $row["szulido"] ."</td>
+                          <td>". $row["pontok"] ."</td>
                         </tr>
                       ";
                       }
