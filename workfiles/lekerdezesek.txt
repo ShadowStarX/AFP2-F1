@@ -18,3 +18,8 @@ INNER JOIN pilotak ON eredmenyek.pilota = pilotak.rajtszam
 INNER JOIN pontszamitas ON eredmenyek.helyezes = pontszamitas.helyezes
 GROUP BY rajtszam, nev
 ORDER BY pontok DESC
+
+SELECT nagydijak.id, nagydijak.orszag, hossz, helyezes, pilotak.nev FROM eredmenyek
+INNER JOIN pilotak ON eredmenyek.pilota = pilotak.rajtszam
+INNER JOIN nagydijak ON eredmenyek.palya = nagydijak.id
+WHERE eredmenyek.helyezes BETWEEN 1 AND 3

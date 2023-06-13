@@ -57,21 +57,39 @@
                       <th>Ország</th>
                       <th>Pálya</th>
                       <th>Hossz</th>
+                      <th colspan='2'>Dobogós pilóták</th>
                     </tr>               
                     <?php 
-                      $sql = "SELECT orszag, palya, hossz FROM nagydijak";
+                      $sql = "SELECT nagydijak.id AS id, nagydijak.orszag AS orszag, nagydijak.palya AS palya,
+                                    hossz, helyezes, pilotak.nev AS nev FROM eredmenyek
+                              INNER JOIN pilotak ON eredmenyek.pilota = pilotak.rajtszam
+                              INNER JOIN nagydijak ON eredmenyek.palya = nagydijak.id
+                              WHERE eredmenyek.helyezes BETWEEN 1 AND 3";
                       $result = $connection->query($sql);
                       if(!$result){
                         die("Invalid query: " . $connection->error);
                       }
                       while($row = $result->fetch_assoc()){
-                      echo "
+                      if ($row["helyezes"] == 1)
+                      {
+                        echo "
                         <tr>
-                          <td>". utf8_encode($row["orszag"]) ."</td>
-                          <td>". utf8_encode($row["palya"]) ."</td>
-                          <td>". $row["hossz"] ."</td>
+                          <td rowspan='3'>". $row["orszag"] ."</td>
+                          <td rowspan='3'>". $row["palya"] ."</td>
+                          <td rowspan='3'>". $row["hossz"] ."</td>
+                          <td>". $row["helyezes"] ."</td>
+                          <td>". $row["nev"] ."</td>
                         </tr>
                       ";
+                      }
+                      else {
+                        echo "
+                        <tr>
+                          <td>". $row["helyezes"] ."</td>
+                          <td>". $row["nev"] ."</td>
+                        </tr>
+                      ";
+                      }
                       }
                   ?>
                   </table> 
