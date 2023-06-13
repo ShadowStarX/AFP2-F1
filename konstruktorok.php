@@ -75,8 +75,8 @@
                           <tr>
                             <td rowspan='2'>". $row["csapat"] ."</td>
                             <td rowspan='2'>". utf8_encode($row["c"]) ."</td>
-                            <td>". utf8_encode($row["rajtszam"]) ."</td>
-                            <td>". utf8_encode($row["nev"]) ."</td>
+                            <td>". $row["rajtszam"] ."</td>
+                            <td>". $row["nev"] ."</td>
                           </tr>
                         ";
                         }
