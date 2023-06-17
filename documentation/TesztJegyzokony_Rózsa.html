@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Bakos Rózsa ~ tesztjegyzőkönyv</title>
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #FFA500;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #FFA500;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #FFA500;
+}
+
+th {
+  background-color: #FFA500;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #FFFFE0;
+}
+
+tr.header {
+  background-color: #FFA500;
+  color: white;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Teszt jegyzőkönyv: Bakos Rózsa Ajándék</h1>
+    <table>
+      <tr class="header">
+        <td>Böngésző</td>
+        <td>Franchise</td>
+        <td>Időpont</td>
+        <td>Vizsgálat</td>
+        <td>Elvárás</td>
+        <td>Eredmény</td>
+      </tr>
+      <tr>
+        <td rowspan="10">Google Chrome</td>
+        <td rowspan="3">Star Wars oldal</td>
+        <td>2023.01.19</td>
+        <td>Gombok és kártyák működésének ellenőrzése</td>
+        <td>A következő és előző gomb a szomszédos diveket teszi láthatóvá.<br>A kártyák pedig akkor fordulnak meg, ha az egér fölöttük van.<br>A  legördülős lista kattintás után elvisz a kiválasztott franchise-hoz.<br>Ezen felül a csillagokat legalább addig mentse el, amíg nem lépünk ki az oldalból vagy töltjük azt újra.</td>
+        <td>Helyes működés</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+        <td>Kártyákban ne lógjon ki a szöveg nagyításkor sem.<br>A kártyák ne essenek szét és ha valamelyik kilógna, az kerüljön új sorba. A vízszintes görgő csak akkor jelenjen meg, ha egy sorba már csak egy kártya fér el. Csökkentett szélesség esetén is cél, hogy 250%-ig működjön az oldal.</td>
+        <td>A menü 250%-től belelóg a kártyákba. Extrém szélesség csökentésnél a szövegek kifolynak a kártyákból. Ezeket leszámítva helyes működés.</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Terheléses tesztelés</td>
+        <td>5 ablakban 8-8 példány megnyitása és feladatkezelében ellenőrizni, hogy ne legyen túl magas a memória- és egyéb erőforrásigénye az oldalaknak.</td>
+        <td>A 40 példány összesen átlag 900MB memóriát fogyaszt, egy példány átlag 24.6MB. A processzor igénybevétele alacsony.</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Trónok harca oldal</td>
+        <td>2023.01.19</td>
+        <td>Gombok és kártyák működésének ellenőrzése</td>
+        <td>A következő és előző gomb a szomszédos diveket teszi láthatóvá.<br>A kártyák pedig akkor fordulnak meg, ha az egér fölöttük van.<br>A  legördülős lista kattintás után elvisz a kiválasztott franchise-hoz.<br>Ezen felül a csillagokat legalább addig mentse el, amíg nem lépünk ki az oldalból vagy töltjük azt újra.</td>
+        <td>Helyes működés</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+        <td>Kártyákban ne lógjon ki a szöveg nagyításkor sem.<br>A kártyák ne essenek szét és ha valamelyik kilógna, az kerüljön új sorba. A vízszintes görgő csak akkor jelenjen meg, ha egy sorba már csak egy kártya fér el. Csökkentett szélesség esetén is cél, hogy 250%-ig működjön az oldal.</td>
+        <td>A menü 250%-től belelóg a kártyákba. Extrém szélesség csökentésnél a szövegek kifolynak a kártyákból. Ezeket leszámítva helyes működés.</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Terheléses tesztelés</td>
+        <td>5 ablakban 8-8 példány megnyitása és feladatkezelében ellenőrizni, hogy ne legyen túl magas a memória- és egyéb erőforrásigénye az oldalaknak.</td>
+        <td>A 40 példány összesen átlag 900MB memóriát fogyaszt, egy példány átlag 24.6MB. A processzor igénybevétele alacsony.</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Avatár oldal</td>
+        <td>2023.01.19</td>
+        <td>Gombok és kártyák működésének ellenőrzése</td>
+        <td>A következő és előző gomb a szomszédos diveket teszi láthatóvá.<br>A kártyák pedig akkor fordulnak meg, ha az egér fölöttük van.<br>A  legördülős lista kattintás után elvisz a kiválasztott franchise-hoz.<br>Ezen felül a csillagokat legalább addig mentse el, amíg nem lépünk ki az oldalból vagy töltjük azt újra.</td>
+        <td>Helyes működés</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Oldal grafikus tulajdonságainak tesztelése</td>
+        <td>Kártyákban ne lógjon ki a szöveg nagyításkor sem.<br>A kártyák ne essenek szét és ha valamelyik kilógna, az kerüljön új sorba. A vízszintes görgő csak akkor jelenjen meg, ha egy sorba már csak egy kártya fér el. Csökkentett szélesség esetén is cél, hogy 250%-ig működjön az oldal.</td>
+        <td>A menü 250%-től belelóg a kártyákba. Extrém szélesség csökentésnél a szövegek kifolynak a kártyákból. Ezeket leszámítva helyes működés.</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Terheléses tesztelés</td>
+        <td>5 ablakban 8-8 példány megnyitása és feladatkezelében ellenőrizni, hogy ne legyen túl magas a memória- és egyéb erőforrásigénye az oldalaknak.</td>
+        <td>A 40 példány összesen átlag 900MB memóriát fogyaszt, egy példány átlag 24.6MB. A processzor igénybevétele alacsony.</td>
+      </tr>
+      <tr>
+        <td>Összes oldal</td>
+        <td>2023.01.22</td>
+        <td>Navigációs teszt</td>
+        <td>A franchise-ok menüjeiben nincsenek helytelen hivatkozások, illetve a felhasználó képes meggondolni magát a menü gomb ismételt kattintásával. (a böngésző pedig mindezt helyesen érzékeli)</td>
+        <td>Helyes működés</td>
+      </tr>
+
+      <tr>
+        <td rowspan="10">Microsoft Edge</td>
+        <td rowspan="3">Star Wars oldal</td>
+        <td>2023.01.19</td>
+        <td>Gombok és kártyák működésének ellenőrzése</td>
+        <td>A következő és előző gomb a szomszédos diveket teszi láthatóvá.<br>A kártyák pedig akkor fordulnak meg, ha az egér fölöttük van.<br>A  legördülős lista kattintás után elvisz a kiválasztott franchise-hoz.<br>Ezen felül a csillagokat legalább addig mentse el, amíg nem lépünk ki az oldalból vagy töltjük azt újra.</td>
+        <td>Helyes működés</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+        <td>Kártyákban ne lógjon ki a szöveg nagyításkor sem.<br>A kártyák ne essenek szét és ha valamelyik kilógna, az kerüljön új sorba. A vízszintes görgő csak akkor jelenjen meg, ha egy sorba már csak egy kártya fér el. Csökkentett szélesség esetén is cél, hogy 250%-ig működjön az oldal.</td>
+        <td>A menü 250%-től belelóg a kártyákba. Extrém szélesség csökentésnél a szövegek kifolynak a kártyákból. Ezeket leszámítva helyes működés.</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Terheléses tesztelés</td>
+        <td>5 ablakban 8-8 példány megnyitása és feladatkezelében ellenőrizni, hogy ne legyen túl magas a memória- és egyéb erőforrásigénye az oldalaknak.</td>
+        <td>A 40 példány összesen átlag 1.5GB memóriát fogyaszt, egy példány átlag 27MB. A processzor igénybevétele alacsony.</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Trónok harca oldal</td>
+        <td>2023.01.19</td>
+        <td>Gombok és kártyák működésének ellenőrzése</td>
+        <td>A következő és előző gomb a szomszédos diveket teszi láthatóvá.<br>A kártyák pedig akkor fordulnak meg, ha az egér fölöttük van.<br>A  legördülős lista kattintás után elvisz a kiválasztott franchise-hoz.<br>Ezen felül a csillagokat legalább addig mentse el, amíg nem lépünk ki az oldalból vagy töltjük azt újra.</td>
+        <td>Helyes működés</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+        <td>Kártyákban ne lógjon ki a szöveg nagyításkor sem.<br>A kártyák ne essenek szét és ha valamelyik kilógna, az kerüljön új sorba. A vízszintes görgő csak akkor jelenjen meg, ha egy sorba már csak egy kártya fér el. Csökkentett szélesség esetén is cél, hogy 250%-ig működjön az oldal.</td>
+        <td>A menü 250%-től belelóg a kártyákba. Extrém szélesség csökentésnél a szövegek kifolynak a kártyákból. Ezeket leszámítva helyes működés.</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Terheléses tesztelés</td>
+        <td>5 ablakban 8-8 példány megnyitása és feladatkezelében ellenőrizni, hogy ne legyen túl magas a memória- és egyéb erőforrásigénye az oldalaknak.</td>
+        <td>A 40 példány összesen átlag 1.5GB memóriát fogyaszt, egy példány átlag 27MB. A processzor igénybevétele alacsony.</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Avatár oldal</td>
+        <td>2023.01.19</td>
+        <td>Gombok és kártyák működésének ellenőrzése</td>
+        <td>A következő és előző gomb a szomszédos diveket teszi láthatóvá.<br>A kártyák pedig akkor fordulnak meg, ha az egér fölöttük van.<br>A  legördülős lista kattintás után elvisz a kiválasztott franchise-hoz.<br>Ezen felül a csillagokat legalább addig mentse el, amíg nem lépünk ki az oldalból vagy töltjük azt újra.</td>
+        <td>Helyes működés</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+        <td>Kártyákban ne lógjon ki a szöveg nagyításkor sem.<br>A kártyák ne essenek szét és ha valamelyik kilógna, az kerüljön új sorba. A vízszintes görgő csak akkor jelenjen meg, ha egy sorba már csak egy kártya fér el. Csökkentett szélesség esetén is cél, hogy 250%-ig működjön az oldal.</td>
+        <td>A menü 250%-től belelóg a kártyákba. Extrém szélesség csökentésnél a szövegek kifolynak a kártyákból. Ezeket leszámítva helyes működés.</td>
+      </tr>
+      <tr>
+        <td>2023.01.22</td>
+        <td>Terheléses tesztelés</td>
+        <td>5 ablakban 8-8 példány megnyitása és feladatkezelében ellenőrizni, hogy ne legyen túl magas a memória- és egyéb erőforrásigénye az oldalaknak.</td>
+        <td>A 40 példány összesen átlag 1.5GB memóriát fogyaszt, egy példány átlag 27MB. A processzor igénybevétele alacsony.</td>
+      </tr>
+      <tr>
+        <td>Összes oldal</td>
+        <td>2023.01.22</td>
+        <td>Navigációs teszt</td>
+        <td>A franchise-ok menüjeiben nincsenek helytelen hivatkozások, illetve a felhasználó képes meggondolni magát a menü gomb ismételt kattintásával. (a böngésző pedig mindezt helyesen érzékeli)</td>
+        <td>Helyes működés</td>
+      </tr>
+
+
+      <td rowspan="7">IOS</td>
+      <td rowspan="2">Star Wars oldal</td>
+      <td>2023.01.22</td>
+      <td>Gombok és kártyák működésének ellenőrzése</td>
+      <td>A következő és előző gomb a szomszédos diveket teszi láthatóvá.<br>A kártyák pedig akkor fordulnak meg, ha az egér fölöttük van.<br>A  legördülős lista kattintás után elvisz a kiválasztott franchise-hoz.<br>Ezen felül a csillagokat legalább addig mentse el, amíg nem lépünk ki az oldalból vagy töltjük azt újra.</td>
+      <td>Nem érzékeli a css-t, a gombok működnek ellenben.</td>
+    </tr>
+    <tr>
+      <td>2023.01.22</td>
+      <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+      <td>Kártyákban ne lógjon ki a szöveg nagyításkor sem.<br>A kártyák ne essenek szét és ha valamelyik kilógna, az kerüljön új sorba. A vízszintes görgő csak akkor jelenjen meg, ha egy sorba már csak egy kártya fér el. Csökkentett szélesség esetén is cél, hogy 250%-ig működjön az oldal.</td>
+      <td>Nem érzékeli a css-t.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Trónok harca oldal</td>
+      <td>2023.01.22</td>
+      <td>Gombok és kártyák működésének ellenőrzése</td>
+      <td>A következő és előző gomb a szomszédos diveket teszi láthatóvá.<br>A kártyák pedig akkor fordulnak meg, ha az egér fölöttük van.<br>A  legördülős lista kattintás után elvisz a kiválasztott franchise-hoz.<br>Ezen felül a csillagokat legalább addig mentse el, amíg nem lépünk ki az oldalból vagy töltjük azt újra.</td>
+      <td>Nem érzékeli a css-t, a gombok működnek ellenben.</td>
+    </tr>
+    <tr>
+      <td>2023.01.22</td>
+      <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+      <td>Kártyákban ne lógjon ki a szöveg nagyításkor sem.<br>A kártyák ne essenek szét és ha valamelyik kilógna, az kerüljön új sorba. A vízszintes görgő csak akkor jelenjen meg, ha egy sorba már csak egy kártya fér el. Csökkentett szélesség esetén is cél, hogy 250%-ig működjön az oldal.</td>
+      <td>Nem érzékeli a css-t.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Avatár oldal</td>
+      <td>2023.01.22</td>
+      <td>Gombok és kártyák működésének ellenőrzése</td>
+      <td>A következő és előző gomb a szomszédos diveket teszi láthatóvá.<br>A kártyák pedig akkor fordulnak meg, ha az egér fölöttük van.<br>A  legördülős lista kattintás után elvisz a kiválasztott franchise-hoz.<br>Ezen felül a csillagokat legalább addig mentse el, amíg nem lépünk ki az oldalból vagy töltjük azt újra.</td>
+      <td>Nem érzékeli a css-t, a gombok működnek ellenben.</td>
+    </tr>
+    <tr>
+      <td>2023.01.22</td>
+      <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+      <td>Kártyákban ne lógjon ki a szöveg nagyításkor sem.<br>A kártyák ne essenek szét és ha valamelyik kilógna, az kerüljön új sorba. A vízszintes görgő csak akkor jelenjen meg, ha egy sorba már csak egy kártya fér el. Csökkentett szélesség esetén is cél, hogy 250%-ig működjön az oldal.</td>
+      <td>Nem érzékeli a css-t.</td>
+    </tr>
+    <tr>
+      <td>Összes oldal</td>
+      <td>2023.01.22</td>
+      <td>Navigációs teszt</td>
+      <td>A franchise-ok menüjeiben nincsenek helytelen hivatkozások, illetve a felhasználó képes meggondolni magát a menü gomb ismételt kattintásával. (a böngésző pedig mindezt helyesen érzékeli)</td>
+      <td>Nem érzékeli a css-t</td>
+    </tr>
+
+    </table>
+    <h2>Teszteléshez használt asztali számítógép és monitor tulajdonságai:</h2>
+    <ul>
+      <li>Processzor: 3.50GHz Intel Core i5-6600K</li>
+      <li>RAM: 16,0 GB</li>
+      <li>Operációs rendszer: Windows 11,64-bites</li>
+      <li>Monitor felbontása: 2560x1080</li>
+    </ul>
+</body>
+</html>
