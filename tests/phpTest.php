@@ -1,11 +1,11 @@
-<?php
+<?php declare(strict_types=1);
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
 use mysqli;
 
 class DatabaseTest extends TestCase {
-    public function testDatabaseConnection() {
+    public function testDatabaseConnection(): void {
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -15,7 +15,7 @@ class DatabaseTest extends TestCase {
         $this->assertFalse($connection->connect_error, 'Nem lehetett csatlakozni az adatbázishoz');
     }
 
-    public function testQueryResults() {
+    public function testQueryResults(): void {
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -30,7 +30,7 @@ class DatabaseTest extends TestCase {
 
 class ResourcesTest extends TestCase {
 
-    public function testCSSFileExists() {
+    public function testCSSFileExists(): void {
         $cssFilePath = 'style.css';
 
         $fileExists = file_exists($cssFilePath);
@@ -38,7 +38,7 @@ class ResourcesTest extends TestCase {
         $this->assertTrue($fileExists, "A CSS fájl '$cssFilePath' nem létezik.");
     }
 
-    public function testImageFilesExist() {
+    public function testImageFilesExist(): void {
         $imagePaths = [
             'resources/header png/hamilton.png',
             'resources/header png/massa.png',
@@ -52,7 +52,7 @@ class ResourcesTest extends TestCase {
 }
 
 class FutamokTest extends TestCase {
-    public function testPageGeneration() {
+    public function testPageGeneration(): void {
         $expectedTitle = 'Futamok';
         $expectedHeader = 'F1<span>2008</span>';
         $expectedNavLinks = ['Kezdőlap', 'Pilóták', 'Konstruktőrök', 'Futamok'];
@@ -69,7 +69,7 @@ class FutamokTest extends TestCase {
         }
     }
 
-    public function testTableData() {
+    public function testTableData(): void {
 
         $expectedData = [
             ['Ország', 'Pálya', 'Hossz', 'Helyezés', 'Pilóta'],
@@ -88,7 +88,7 @@ class FutamokTest extends TestCase {
 }
 
 class KonstruktorokTest extends TestCase {
-    public function testTableHasData() {
+    public function testTableHasData(): void {
         $expectedData = [
             [
                 'csapat' => 'Mercedes',
@@ -118,7 +118,7 @@ class KonstruktorokTest extends TestCase {
 }
 
 class PilotakTest extends TestCase {
-    public function testTableHasData() {
+    public function testTableHasData(): void {
         $expectedData = [
             [
                 'ranking' => '1',
