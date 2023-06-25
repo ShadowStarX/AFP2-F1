@@ -36,10 +36,10 @@ window.addEventListener('scroll', () => {
     border.style.width = `${scroll / (sectionY.top + section_height) * 30}%`;
 })
 
-const menuToggle = document.querySelector('.hamburger-menu');
-const menu = document.querySelector('.menu');
 
-menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('show');
-    menuToggle.classList.toggle('active');
+const menuHamburger = document.querySelector(".menu-hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+menuHamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-menu');
 });
