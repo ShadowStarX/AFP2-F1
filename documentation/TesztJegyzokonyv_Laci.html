@@ -70,7 +70,7 @@ tr.header {
         <td>2023.</td>
         <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
         <td></td>
-        <td>Ha nagyon lecsökkentjük a szélességet, hajlamosak a kártyából kifolyni a szövegek még 125-200% között is.</td>
+        <td></td>
       </tr>
       <tr>
         <td>2023.</td>
@@ -114,7 +114,7 @@ tr.header {
         <td>Oldal grafikus tulajdonságainak tesztelése</td>
         <td></td>
         <td></td>
-        <td>Nagymértékű vízszintes összehúzás és/vagy nagyon nagy zoom-in esetén túlcsordulnak a kártyák.</td>
+        <td></td>
       </tr>
       <tr>
         <td>2023.</td>
@@ -167,14 +167,14 @@ tr.header {
         <td>2023.</td>
         <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
         <td></td>
-        <td>Oldalsáv nélkül 2 db, annak bekapcsolásával 4 db kártya esetén lép fel túlcsordulás 500%-on. Az oldalirányú behúzás lentebb viszi az "ingerküszöböt".</td>
-        <td>Minél nagyobb és minél keskenyebb a böngésző ablaka, annál több a túlcsordulás.</td>
+        <td></td>
+        <td></td>
       </tr>
       <tr>
         <td>2023.</td>
         <td>Terheléses tesztelés</td>
         <td>5 ablakban 8-8 példány megnyitása és feladatkezelében ellenőrizni, hogy ne legyen túl magas a memória- és egyéb erőforrásigénye az oldalaknak.</td>
-        <td>Oldalpéldányonként kicsivel kevesebb mint 20 MB RAM igénybevétele (összesen 790 MB), a processzor megterhelése minimális és egyenetlen.</td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
@@ -189,62 +189,53 @@ tr.header {
         <td>2023.</td>
         <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
         <td></td>
-        <td>Amennyiben nincs bekapcsolva az oldalsáv, a 11 kártyából 3 db nem fér el 500%-on, viszont ha be van, akkor 6 db esetében lesz túlcsordulás. A vízszinte összehúzásra ez az oldal is érzékeny.</td>
-        <td>Minél nagyobb és minél keskenyebb a böngésző ablaka, annál több a túlcsordulás.</td>
+        <td></td>
+        <td></td>
       </tr>
       <tr>
         <td>2023.</td>
         <td>Terheléses tesztelés</td>
         <td>5 ablakban 8-8 példány megnyitása és feladatkezelében ellenőrizni, hogy ne legyen túl magas a memória- és egyéb erőforrásigénye az oldalaknak.</td>
-        <td>A 40-szeres megnyitás összesen 540 MB RAM-ot igényel, így átlagosan 13,5 MB RAM kell egyetlen példánynak. A processzort elenyésző mértékben terheli csak meg.</td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <td>Összes oldal</td>
         <td>2023.</td>
         <td>Navigációs teszt</td>
-        <td>A franchise-ok menüjeiben nincsenek helytelen hivatkozások, illetve a felhasználó képes meggondolni magát a menü gomb ismételt kattintásával. (a böngésző pedig mindezt helyesen érzékeli)</td>
+        <td></td>
         <td></td>
         <td></td>
       </tr>
 
       <tr>
         <td rowspan="7">PHP unit teszt<br></td>
-        <td rowspan="2">Star Wars</td>
-        <td rowspan="2">2023.</td>
-        <td>Lekérdezések helyessége és megjelenítése</td>
-        <td rowspan="2">Az oldal érzékeli a CSS-t és a JS, illetve helyesen is használja azokat.</td>
-        <td rowspan="2" colspan="2">Az oldal nem érzékeli a CSS-t, a csillagok és a legördülő listák működnek, de a láthatóságon a gombok sem változtatnak.</td>
-      </tr>
-      <tr>
-        <td>Az oldal grafikus tulajdonságainak tesztelése</td>
-      </tr>
-      <tr>
-        <td rowspan="2">Trónok Harca</td>
-        <td rowspan="2">2023.</td>
-        <td>Lekérdezések helyessége és megjelenítése</td>
-        <td rowspan="2">Az oldal érzékeli a CSS-t és a JS, illetve helyesen is használja azokat.</td>
-        <td rowspan="2" colspan="2">Az oldal nem érzékeli a CSS-t, a csillagok és a legördülő listák működnek, de a láthatóságon a gombok sem változtatnak.</td>
-      </tr>
-      <tr>
-        <td>Az oldal grafikus tulajdonságainak tesztelése</td>
-      </tr>
-      <tr>
-        <td rowspan="2">Avatár</td>
-        <td rowspan="2">2023.</td>
-        <td>Lekérdezések helyessége és megjelenítése</td>
-        <td rowspan="2">Az oldal érzékeli a CSS-t és a JS, illetve helyesen is használja azokat.</td>
-        <td rowspan="2" colspan="2">Az oldal nem érzékeli a CSS-t, a csillagok és a legördülő listák működnek, de a láthatóságon a gombok sem változtatnak.</td>
-      </tr>
-      <tr>
-        <td>Az oldal grafikus tulajdonságainak tesztelése</td>
-      </tr>
-      <tr>
-        <td>Összes oldal</td>
+        <td>Star Wars</td>
         <td>2023.</td>
-        <td>Navigációs tesztelés</td>
-        <td>A megfelelő franchise-ra kattintva a böngésző átvezet minket annak az oldalára</td>
-        <td>A hivatkozások helyesen működnek</td>
+        <td>Lekérdezések helyessége és megjelenítése</td>
+        <td>A megadott lekérdezések végigfutnak a PHP Unit-teszten.</td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td>Konstruktőrök tábla</td>
+        <td>2023.</td>
+        <td>Lekérdezések helyessége és megjelenítése</td>
+        <td>A megadott lekérdezések végigfutnak a PHP Unit-teszten.</td>
+        <tdcolspan="2"></td>
+      </tr>
+      <tr>
+        <td>Futamok tábla</td>
+        <td>2023.</td>
+        <td>Lekérdezések helyessége és megjelenítése</td>
+        <td>A megadott lekérdezések végigfutnak a PHP Unit-teszten.</td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td></td>
       </tr>
     </table>
