@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>F1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Követelmény Specifikáció</h1>
+
+    <h2>Áttekintés</h2>
+        <p>
+            Egy olyan weblapot szeretnénk létrehozni, ami arra szolgál, hogy az felhasználók utána tudjanak nézni a
+            2008-as Formula-1-es szezon adatainak (pilóták,futamok, konstruktőrök)
+            A legfontosabb szempont, hogy a felhasználó pontos információhoz jusson, egy igényes kialakítás keretében.
+        </p>
+
+    <h2>Jelenlegi helyzet</h2>
+        <p>
+            A megrendelő jelenleg nem rendelkezik semmilyen felülettel, a megrendelt szoftverhez ezért teljeskörű üzembe helyezési, üzemeltetési és karbantartási szolgáltatást igényel.
+            <br>Napjainkban is fontos az emberek számára egy adatbázisra épülő, felhasználóbarát felület, ahol tájékozódnak a legendás 2008-as szezon versenyeredményeiről.
+            <br>Annak érdekében, hogy ezt ne a megszokott módon tegyék (pl. keresőben), az elkészült weboldal letisztult külsővel rendelkezzen és megkapó dizájnnal.
+        </p>
+
+    <h2>Vágyálomrendszer</h2>
+        <p>
+            A megrendelő alapfelvetése szerint olyan weboldalt szeretnének üzemeltetni, amely a felhasználók számára archívum oldalként szolgál, 
+            ahol tájékozódhatnak a 2008-as F1 adatokról, melyeket elemezhetnek/felhasználhatnak később.
+            <br>Azonban a megrendelő különösen fontos szempontként hivatkozott arra, hogy az általuk elképzelt weboldal 
+            nem csak letisztult, igényes és figyelemfelkeltő külsővel rendelkezik, de valamilyen extra funkció, és/vagy különleges
+            dizájn segítségével plusz élményt nyújt a felhasználóknak a tájékozódáson túl (pl. parallax fejléc).
+            <br>A megrendelő elmondása alapján egy elhalványodó megoldást tartanának a legoptimálisabb megoldásnak, amely
+            mindenekelőtt kialakításában és kinézetében logikus felépítésű és könnyen kezelhető, ezentúl sötét és világos színek arányos
+            és igényes felhasználásával, illetve jól láthatóan elhelyezett navigációs eszközökkel segítik a felhasználót a számára legmegfelelőbb tartalom kiválasztásban.
+            <br>A megrendelő ezek mellett kifejezetten kérte, hogy legyen egy kedvcsináló is, egyfajta üdvözlő oldal, ahol röviden
+            bemutatja a tematikát. Ehhez videó anyag társulhatna.
+            <br>A megrendelő olyan weboldalt szeretne, amely könnyen kezelhető, reszponzív, átlátható és letisztult dizájnnal rendelkezik, 
+            ezentúl viszont nem ragaszkodnak regisztrációs funkcióhoz, mivel nem kívánják ilyen módon megkülönböztetve a felhasználókat 
+            korlátozni a tartalmukat. Az oldal esszenciája éppen a könnyű elérhetőségben és az ösztönösen egyszerű használhatóságban rejlik.
+            <br>Éppen emiatt fontos a megrendelő számára, hogy a lehető legtöbb eszközön illetve platformon működőképes legyen az elkészült weboldal,
+            hogy minden felhasználó azonos, színvonalas élményben részesüljön. 
+        </p>
+        <p>
+            A tartalmat illetően a megrendelők konkrétan kikötötték, hogy a navigáció gyorsan és egyszerűen legyen megoldva, és persze mindehhez
+            a felhasználók által általánosan használt egér/touchpad perifériák használata elégséges legyen.
+        </p>
+    <h2>Funkcionális Követelmények</h2>
+        <p>
+            A funkcionális követelményekkel törekszünk a megrendelők igényeit a lehető legpontosabban összegyűjteni, így az elkészült Formula-1-es weboldalnak 
+            mindenképp széles tömegek által könnyen elérhetőnek, egyszerűen navigálhatónak és modern szemmel nézev igényesnek kell lennie. 
+            <br>A felhasználók élménye elsődleges szempont, így a megrendelők vágyait követve szemet kímélő sötét alapszínek használata ajánlott, amelyben
+            világos, háttérből kiemelkedő színek segítik a felhasználól navigációját az oldal tartalmában.
+            <br>A kezelőfelület iránti igények egy egyszerű és logikus, webes kialakítású környezetet követelnek meg, amely kevés gombbal és 
+            egyszerűen használható menüvel biztosítja a könnyű navigációt egyik weblapról a másikra.
+        </p>
+
+    <h2>Rendszerre vonatkozó törvények, szabályok, ajánlások</h2>
+        <p>
+            Általános Információk 
+            <br>Az Alkalmazáshoz való hozzáférést és annak használatát az alkalmazandó jogszabályok és a jelen Felhasználási Feltételek 
+            és Adatkezelési tájékoztató (a továbbiakban Felhasználási Feltételek) szabályozzák. 
+            Az Alkalmazást letöltők és használók (a továbbiakban: a Felhasználók) elfogadják a jelen Felhasználási Feltételeket. 
+            Amennyiben ezen Felhasználási Feltételeket és Adatkezelési Tájékoztatót nem fogadják el, nem jogosultak a regisztrációra 
+            és az Alkalmazás használatára.
+            A jelen Felhasználási Feltételekre a magyar jog az irányadó, tekintet nélkül a nemzetközi magánjog előírásaira. 
+            Az Alkalmazás Felhasználói kifejezetten hozzájárulnak ahhoz, hogy a jogvitákra a magyar hatóságoknak és bíróságoknak 
+            legyen kizárólagos joghatóságuk a magyar jog alapján.
+        </p>
+        <p>
+            Szellemi tulajdon 
+            <br>Az Alkalmazás és valamennyi kapcsolódó védjegy, szerzői jogi alkotás és egyéb – akár bejegyzett, akár be nem jegyzett – 
+            szellemi tulajdon (a továbbiakban együttesen: Szellemi Tulajdon) tulajdonosa az EKKE és/vagy EKKE Szolgáltató, 
+            valamint az alkalmazáshoz kedvezményt nyújtó partnerek.
+            A Felhasználók az Alkalmazást a Szellemi Tulajdon maximális tiszteletben tartásával jogosultak használni. 
+            A Szellemi Tulajdon kiterjed különösen, de nem kizárólagosan valamennyi szoftverre, logóra, márkajelre, márkanévre, fényképre, 
+            szövegre, grafikára, adatbázisra. 
+            A Szellemi Tulajdonnak tilos bárminemű megsértése, bitorlása, másolása, átdolgozása és tilos azt bármilyen egyéb módon megsérteni, 
+            azt jogosulatlanul felhasználni, továbbadni, megterhelni, azzal bármilyen módon rendelkezni, visszaélni. 
+            Ezen szabályok megsértése az Alkalmazás használati lehetőségeinek azonnali hatályú megszüntetése mellett 
+            a megfelelő jogi lépések megtételét – beleértve esetleges büntetőjogi lépések megtételét is – vonja maga után a Felhasználóval, 
+            más jogsértő személlyel szemben a Tulajdonos és/vagy a Szellemi Tulajdon egyéb jogosultjai által.
+        </p>
+        <p>
+            Használat 
+            <br>Az Alkalmazás Felhasználói 7 éven felüli természetes személyek lehetnek. 
+            Az Alkalmazás díjmentesen vehető igénybe, kizárólag privát, azaz nem üzletszerű módon és célra, kizárólag a jelen 
+            Felhasználási Feltételek szerint. 
+            Az Alkalmazás letöltéséért és használatáért az adatforgalmat biztosító szolgáltató külön díjat számíthat fel.
+            Az ezzel kapcsolatos esetlegesen felmerülő költségek a Felhasználót terhelik. 
+            A Felhasználási Feltételek és az Alkalmazás működésének a módosítására, az Alkalmazás működésének a megszüntetésére a Tulajdonos 
+            bármikor jogosult, a Felhasználó előzetes értesítése nélkül. 
+            Az Alkalmazáshoz való hozzáférést a Tulajdonos bármikor visszavonhatja akár az adott Felhasználóra nézve, akár szélesebb körben 
+            vagy teljes körűen előzetes értesítés, figyelmeztetés nélkül.
+        </p>
+        <p>
+            Felelősségi szabályok 
+            <br>A Tulajdonos fenntartja magának a jogot arra, hogy amennyiben valamely Felhasználó részéről bármilyen manipulációt, 
+            tömegesen generált letöltést, illetve az Alkalmazás szellemével bármilyen módon összeférhetetlen vagy azt sértő magatartást tapasztal, 
+            vagy ennek megalapozott gyanúja felmerül, úgy a Felhasználót azonnali hatállyal kizárja az Alkalmazás felhasználói köréből.
+            Az Alkalmazáshoz kapcsolódó adatbázis módosítása kizárólag az Üzemeltető által, illetve az Alkalmazást üzemeltető webkiszolgálón 
+            keresztül lehetséges. 
+            Bármilyen külső, nem az Alkalmazás részeként elérhető eszközzel történő beavatkozás a Felhasználó azonnali kizárását eredményezi. 
+            Ha a Felhasználó az Alkalmazást használat közben bezárja, vagy ha a kapcsolat (bármely okból) megszakad a kiszolgáló webhelyével, 
+            abban az esetben az adatok elvesztéséért a Tulajdonos semmilyen felelősséget nem vállal. 
+            A Tulajdonos és az Üzemeltető a rendelkezésére álló eszközökkel biztosítja, hogy az Alkalmazás használata technikai szempontból 
+            biztonságosnak minősüljön. 
+            Az Alkalmazáshoz való csatlakozás miatt bekövetkező károkért, az internetes hálózat esetleges üzemkimaradásából, az elérési út hibájából,
+             bármely nem várt technikai hibából eredő adatvesztésért, vírusból, vagy más károkért a Tulajdonos nem felelős. 
+            A Felhasználóknak minden esetben fel kell mérniük, hogy rendelkeznek-e az Alkalmazás használatához szükséges ismeretekkel, 
+            technikai követelményekkel és teljesítményekkel.
+        </p>
+       
+    <h2>Jelenlegi üzleti folyamatok modellje</h2>
+        <p>
+            A megrendelő nem foglalkozott még hasonló területtel, így az üzleti folyamatait csupán olyan mértékben érinti az általuk igényelt weboldal,
+            amelynek a szoftverkészítés és átadás szempontjából nincs jelentősége.
+        </p>
+
+    <h2>Igényelt üzleti folyamatok modellje</h2>
+        <p>
+            A megrendelő olyan webes felületet szeretne biztosítani a felhasználók számára, ahol a 2008-as F1 futam adatai érhetőek el (pilóták, konstruktőrök, futamok) mindez egyszerű, letisztult, de igényes és modern környezetben.
+        </p>
+
+    <h2>Követelménylista</h2>
+        <p>
+            <ul>
+                <li>Könnyen üzemeltethető és karbantartható rendszer</li>
+                <li>Reszponzív dizájn</li>
+                <li>Az egyes adatok megjelenítése legyen érdekes/figyelemfelkeltő</li>
+              </ul> 
+        </p>
+
+    <h2>Riportok</h2>
+        <p>
+            Kivitelező: Milyen elképzelése van az oldallal kapcsolatban? Milyen koncepciót és milyen funkciókat valósítsunk meg?
+            <br>Megrendelő: Olyan oldalt szeretnénk, ahol a felhasználó megtekintheti a 2008-as Formula-1-es futam eredményeit, pilótáit, csapatait.
+            Ezekről pontos információkat gyűjt
+            <br>
+            <br>Kivitelező: Milyen felülettel rendelkezzen a weboldal? Milyen dizájn készüljön hozzá?
+            <br>Megrendelő: Egy felhasználók által könnyen kezelhető és átlátható, egyszerűen navigálható felületet szeretnénk, 
+            modern és egyedi dizájnnal.
+
+        </p>
+        
+    <h2>Fogalomtár</h2>
+    <p>
+        <ul>
+            <li>parallax effektus/ technika: egy különleges képalkotási technika, amelynek lényege a többrétegű megjelenítés, ahol a háttérben található rétegek lassabban mozdulnak el a szemlélő számára, mint az előtérben találhatóak, így keltenek háromdimenziós hatást.</li>
+            <li>reszponzív felület: mobilon, tableten, PC-n igazodik a képernyőhöz a felület mérete, azaz több eszközön is probléma nélkül üzemelhet</li>
+        </ul>
+    </p>
+</body>
+</html>

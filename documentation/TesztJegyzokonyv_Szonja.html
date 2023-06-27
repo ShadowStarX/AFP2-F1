@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Konyecsny Szonja ~ Tesztjegyzőkönyv</title>
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ff69b4;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #87CEFA;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #87CEFA;
+}
+
+th {
+  background-color: #F5FFFA;
+}
+
+tr:nth-child(even) {
+  background-color: #F0FFFF;
+}
+
+tr.header {
+  background-color: #ff69b4;
+  color: white;
+}
+    </style>
+</head>
+
+<body>
+  <h1>Tesztjegyzőkönyv: Konyecsny Szonja Anilla</h1>
+
+  <!--CSS IMPLEMENTÁCIÓ (HTML)-->
+   <!--sw-->
+  <table>
+    <tr class="header">
+      <td> </td>
+      <td>CSS implementáció <br>(HTML vázhoz)</td>
+      <td>Időpont</td>
+      <td>Vizsgálat</td>
+      <td>Elvárás</td>
+      <td>Eredmény</td>
+    </tr>
+    <tr>
+      <td>1.</td>
+      <td>Oldal háttere</td>
+      <td>2023.05.11.</td>
+      <td>Oldal fejléce</td>
+      <td>Az oldal fejléce vizuálisan megfelelően álljon össsze a Resources mappában tárolt fájlokból.</td>
+      <td>Helyes működés, az oldal a megfelelő képeket jeleníti meg, elfogadható módon.</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Képek megjelenése</td>
+      <td>2023.05.12.</td>
+      <td>A megfelelő képek jelenjenek meg az oldalakon</td>
+      <td>Minden navigációs oldalon jelenjen meg az adott táblázat illusztrációja.</td>
+      <td>Helyes működés, a képek megjelenése az elvárásoknak megfelelően történik.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Táblázatok megjelenése</td>
+      <td>2023.05.12.</td>
+      <td>A táblázatok megjelenése.</td>
+      <td>Minden navigációs oldalon jelenjen meg az adatbázis adataihoz készített táblázat.</td>
+      <td>A teszt sikeres volt.</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Kezdőoldal illusztráció</td>
+      <td>2023.05.12.</td>
+      <td>A kezdőoldal videója</td>
+      <td>A kezdőoldal látogatása esetén automatikusan induljon el a 2008-as F1 intro videó néma loop módban.</td>
+      <td>A teszt sikeres volt.</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Kezdőoldal szöveg</td>
+      <td>2023.05.12.</td>
+      <td>A kezdőoldal szövege megfelelően jelenjen meg.</td>
+      <td>A kezdőoldal szövege ne tartalmazzon hibát, megfelelő karaktertípussal és formában jelenjen meg.</td>
+      <td>A teszt sikeresen zárult.</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Széles képernyős navigációs felület színe/mérete/távolság/pozíció</td>
+      <td>2023.06.20.</td>
+      <td>A navigációs felület működésének és megjelenésének ellenőrzése</td>
+      <td>A navigációs felület helyesen működjön és megfelelően jelenjen meg az oldal stílusával és színvilágával összhangban.
+        <br>Az aktuális oldal menüpontja mindig piros színnel kerül feltüntetésre.
+      </td>
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>Mobil navigációs fül kialakítása</td>
+      <td>2023.06.20.</td>
+      <td>Mobil nézetben való navigálás.</td>
+      <td>Mobil nézetben a navigáció hamburger-menü segítségével menjen végbe, amely egy oldalra eltűnő, áttetsző és homályosított felületen jelenik meg.</td>
+      <td>A teszt sikerrel zárult, az elvárásoknak megfelelően.</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>Reszponzivitás</td>
+      <td>2023.06.21.</td>
+      <td>Oldal grafikus megjelenésének reszponzivitása</td>
+      <td>A fejléc, a képek, a szöveg, a videó, de leginkább a naviációs menü a lehető legnagyobb tűréshatárral az elvártaknak megfelelően, arányoson és igényesen jelenjenek meg a lehető legtöbb eszközön.
+      <td>A fejléc nagy szélességen szétcsúszik, ez nem kiküszöbölhető a parallax-hatáshoz szükséges feladaraboltság miatt.
+        <br>Alacsonyabb százalékon semmilyen probléma nem merült fel, a reszponzivitás az elvártaknak megfelelően valósult meg.
+      </td>
+    </tr>
+  </table>
+
+  <!--JS IMPLEMENTÁCIÓ-->
+  <table>
+    <tr class="header">
+      <td> </td>
+      <td>CSS implementáció <br>(JavaScript funkciókhoz)</td>
+      <td>Időpont</td>
+      <td>Vizsgálat</td>
+      <td>Elvárás</td>
+      <td>Eredmény</td>
+    </tr>
+    <tr>
+      <td>1.</td>
+      <td>Beúszó menü színe/mérete/pozíció</td>
+      <td>2023.06.20.</td>
+      <td>Beúszó menü működésének és megjelenésének ellenőrzése</td>
+      <td>A JS implementáció által létrehozott, mobil nézetben beúszó menü, és mögötte a fejléc helyesen működjenek és megfelelően jelenjenek meg.
+        <br>A beúszó menü színe legyen összhangban az oldal színeivel, mérete megfelelő legyen a felhasználói interakcióhoz, a menüpontok egymástól való távolsága arányos legyen.
+      </td>
+      <td>Helyes működés</td>
+    </tr>
+  </table>
+
+  <!--BÖNGÉSZŐK TESZTELÉSE-->
+  <table>
+    <tr class="header">
+      <td> </td>
+      <td>Böngészőbeli eltérések vizsgálata</td>
+      <td>Böngésző</td>
+      <td>Időpont</td>
+      <td>Elvárás</td>
+      <td>Eredmény</td>
+    </tr>
+    <!--FIREFOX-->
+    <tr>
+      <td>1.</td>
+      <td>Navigációs menü</td>
+      <td rowspan="3">Mozzilla Firefox</td>
+      <td>2023.06.22.</td>
+      <td>Az adott menüpontra kattintás a megfelelő oldalra navigál.
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+      <td>2023.06.22.</td>
+      <td>Az oldalakon a fejléc, a szöveg, a képek, a kezdőoldalon a videó, illetve a mobil nézetben beúszó menü/jobb felső sarokban a navigációs menü megfelelően jelenjen meg különböző nagyításokban.
+        <br>Az oldal elemei reszponzívan viselkedjenek, adott nagyításban is megfelelően jelenjenek meg. 
+        <br>Csökkentett oldalszélesség esetén az elemek, illetve a navigációs felület felhasználóbarát maradjon. </td>
+      <td>Széles képernyőn a fejléc nem működik megfelelően, a fejléc elemei szétcsúsznak (a parallex hatás másként nem érhető el).
+        <br>Ezenkívül azonban a teszt sikeres volt és megfelelő eredménnyel zárult, a navigációs menü a 
+        reszponzív követelményeknek megfelelően változik az oldalméret változása esetén.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Terheléses tesztelés</td>
+      <td>2023.06.22.</td>
+      <td>A weboldal 5 ablakban, egyenként 8-8 példányban való megnyitása, mindeközben a feladatkezelében ellenőrizni, hogy tűrhető legyen az oldal erőforrásigénye.</td>
+      <td>Helyes működés, az erőforráshasználat tűréshatáron belül maradt.</td>
+    </tr>
+
+    <!--TOR-->
+    <tr>
+      <td>1.</td>
+      <td>Gombok, menük és kártyák működésének ellenőrzése</td>
+      <td rowspan="3">Tor</td>
+      <td>2023.06.22.</td>
+      <td>Az adott menüpontra kattintás a megfelelő oldalra navigál.
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Oldal grafikus tulajdonságainak ellenőrzése</td>
+      <td>2023.06.22.</td>
+      <td>Az oldalakon a fejléc, a szöveg, a képek, a kezdőoldalon a videó, illetve a mobil nézetben beúszó menü/jobb felső sarokban a navigációs menü megfelelően jelenjen meg különböző nagyításokban.
+        <br>Az oldal elemei reszponzívan viselkedjenek, adott nagyításban is megfelelően jelenjenek meg. 
+        <br>Csökkentett oldalszélesség esetén az elemek, illetve a navigációs felület felhasználóbarát maradjon. </td>
+      <td>Széles képernyőn a fejléc nem működik megfelelően, a fejléc elemei szétcsúsznak (a parallex hatás másként nem érhető el).
+        <br>Ezenkívül azonban a teszt sikeres volt és megfelelő eredménnyel zárult, a navigációs menü a 
+        reszponzív követelményeknek megfelelően változik az oldalméret változása esetén.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Terheléses tesztelés</td>
+      <td>2023.06.22.</td>
+      <td>A weboldal 5 ablakban, egyenként 8-8 példányban való megnyitása, mindeközben a feladatkezelében ellenőrizni, hogy tűrhető legyen az oldal erőforrásigénye.</td>
+      <td>Helyes működés, az erőforráshasználat tűréshatáron belül maradt.</td>
+    </tr>
+  </table>
+
+    <!--ESZKÖZ-->
+  <h2>Teszteléshez használt eszköz tulajdonságai:</h2>
+  <ul>
+    <li>Megnevezés: MacBook Retina, 2017, 12-inch</li>
+    <li>Processzor: 1,2 GHz Kétmagos Intel Core m3 processzor</li>
+    <li>RAM: 8 GB</li>
+    <li>Operációs rendszer: macOS Ventura 13.4</li>
+    <li>Képernyő felbontása: 2304 x 1440 </li>
+  </ul>
+</body>
+</html>
