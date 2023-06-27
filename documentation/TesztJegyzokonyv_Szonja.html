@@ -100,6 +100,16 @@ tr.header {
     </tr>
     <tr>
       <td>6.</td>
+      <td>Széles képernyős navigációs felület színe/mérete/távolság/pozíció</td>
+      <td>2023.06.20.</td>
+      <td>A navigációs felület működésének és megjelenésének ellenőrzése</td>
+      <td>A navigációs felület helyesen működjön és megfelelően jelenjen meg az oldal stílusával és színvilágával összhangban.
+        <br>Az aktuális oldal menüpontja mindig piros színnel kerül feltüntetésre.
+      </td>
+      <td>Helyes működés</td>
+    </tr>
+    <tr>
+      <td>7.</td>
       <td>Mobil navigációs fül kialakítása</td>
       <td>2023.06.20.</td>
       <td>Mobil nézetben való navigálás.</td>
@@ -107,7 +117,7 @@ tr.header {
       <td>A teszt sikerrel zárult, az elvárásoknak megfelelően.</td>
     </tr>
     <tr>
-      <td>7.</td>
+      <td>8.</td>
       <td>Reszponzivitás</td>
       <td>2023.06.21.</td>
       <td>Oldal grafikus megjelenésének reszponzivitása</td>
@@ -119,7 +129,6 @@ tr.header {
   </table>
 
   <!--JS IMPLEMENTÁCIÓ-->
-   <!--sw-->
   <table>
     <tr class="header">
       <td> </td>
@@ -131,21 +140,11 @@ tr.header {
     </tr>
     <tr>
       <td>1.</td>
-      <td>Gombok színe/mérete/távolság/pozíció</td>
-      <td>2023.01.14.</td>
-      <td>Gombok és kártyák működésének és megjelenésének ellenőrzése</td>
-      <td>A JS implementáció általt létrehozott navigációs gombok, és az ezek által kontrollált, aktuálisan megjelenő kártyák helyesen működjenek és megfelelően jelenjenek meg.
-        <br>A gombok színe legyen összhangban az oldal színeivel, mérete megfelelő legyen a felhasználói interakcióhoz, a távolság arányos legyen a kártyáktól és a lenyíló menütől.
-      </td>
-      <td>Helyes működés</td>
-    </tr>
-    <tr>
-      <td>2.</td>
-      <td>Lenyíló menü színe/mérete/pozíció</td>
-      <td>2023.01.14.</td>
-      <td>Lenyíló menü működésének és megjelenésének ellenőrzése</td>
-      <td>A JS implementáció általt létrehozott lenyíló menü, és az ez által kontrollált, aktuálisan megjelenő kártyák helyesen működjenek és megfelelően jelenjenek meg.
-        <br>A lenyíló menü színe legyen összhangban az oldal színeivel, mérete megfelelő legyen a felhasználói interakcióhoz, a távolság arányos legyen a kártyáktól és a gomboktól.
+      <td>Beúszó menü színe/mérete/pozíció</td>
+      <td>2023.06.20.</td>
+      <td>Beúszó menü működésének és megjelenésének ellenőrzése</td>
+      <td>A JS implementáció által létrehozott, mobil nézetben beúszó menü, és mögötte a fejléc helyesen működjenek és megfelelően jelenjenek meg.
+        <br>A beúszó menü színe legyen összhangban az oldal színeivel, mérete megfelelő legyen a felhasználói interakcióhoz, a menüpontok egymástól való távolsága arányos legyen.
       </td>
       <td>Helyes működés</td>
     </tr>
@@ -164,13 +163,10 @@ tr.header {
     <!--FIREFOX-->
     <tr>
       <td>1.</td>
-      <td>Gombok, menük és kártyák működésének ellenőrzése</td>
-      <td rowspan="4">Mozzilla Firefox</td>
-      <td>2023.01.21.</td>
-      <td>A "következő" és "előző" navigációs gombok a szomszédos diveket (filmek vagy sorozatok hármasát) teszi láthatóvá.
-        <br>A kártyák forgása hover esetén történik.
-        <br>A lenyíló lista a megfelelő menüpontra való kattintás után megjeleníti a kiválasztott filmeket/sorozatokat.
-        <br>A véleménykifejezést segítő csillagok az értékelést követően legalább addig legyenek visszanézhetők, amíg be nem zárjuk az oldalt vagy újra nem töltjük azt.</td>
+      <td>Navigációs menü</td>
+      <td rowspan="3">Mozzilla Firefox</td>
+      <td>2023.06.22.</td>
+      <td>Az adott menüpontra kattintás a megfelelő oldalra navigál.
       <td>Helyes működés</td>
     </tr>
     <tr>
@@ -191,25 +187,14 @@ tr.header {
       <td>A weboldal 5 ablakban, egyenként 8-8 példányban való megnyitása, mindeközben a feladatkezelében ellenőrizni, hogy tűrhető legyen az oldal erőforrásigénye.</td>
       <td>Helyes működés, az erőforráshasználat tűréshatáron belül maradt.</td>
     </tr>
-     <!--összes-->
-    <tr>
-      <td>4.</td>
-      <td>Navigációs teszt</td>
-      <td>2023.01.21.</td>
-      <td>A navigációs fejléc tartalma (gombok, lenyíló menü), megfelelően működjön és a megfelelő helyre mutasson, mindez pedig az elvárásoknak megfelelően menjen végbe a böngészőben.</td>
-      <td>Helyes működés</td>
-    </tr>
 
     <!--TOR-->
     <tr>
       <td>1.</td>
       <td>Gombok, menük és kártyák működésének ellenőrzése</td>
-      <td rowspan="4">Tor</td>
-      <td>2023.01.21.</td>
-      <td>A "következő" és "előző" navigációs gombok a szomszédos diveket (filmek vagy sorozatok hármasát) teszi láthatóvá.
-        <br>A kártyák forgása hover esetén történik.
-        <br>A lenyíló lista a megfelelő menüpontra való kattintás után megjeleníti a kiválasztott filmeket/sorozatokat.
-        <br>A véleménykifejezést segítő csillagok az értékelést követően legalább addig legyenek visszanézhetők, amíg be nem zárjuk az oldalt vagy újra nem töltjük azt.</td>
+      <td rowspan="3">Tor</td>
+      <td>2023.06.22.</td>
+      <td>Az adott menüpontra kattintás a megfelelő oldalra navigál.
       <td>Helyes működés</td>
     </tr>
     <tr>
@@ -229,14 +214,6 @@ tr.header {
       <td>2023.01.21.</td>
       <td>A weboldal 5 ablakban, egyenként 8-8 példányban való megnyitása, mindeközben a feladatkezelében ellenőrizni, hogy tűrhető legyen az oldal erőforrásigénye.</td>
       <td>Helyes működés, az erőforráshasználat tűréshatáron belül maradt.</td>
-    </tr>
-    <!--összes-->
-    <tr>
-      <td>4.</td>
-      <td>Navigációs teszt</td>
-      <td>2023.01.21.</td>
-      <td>A navigációs fejléc tartalma (gombok, lenyíló menü), megfelelően működjön és a megfelelő helyre mutasson, mindez pedig az elvárásoknak megfelelően menjen végbe a böngészőben.</td>
-      <td>Helyes működés</td>
     </tr>
   </table>
 
