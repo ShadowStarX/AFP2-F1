@@ -10,18 +10,17 @@
 
     <h2>A rendszer célja</h2>
     <p>
-        A rendszer legfőbb célja, hogy a felhasználó képes legyen tájékozódni a már bemutatott Star Wars filmekről és sorozatokról. Megtekintheti a borítókat, elolvashatja az összefoglalókat, a megjelenés idejét, illetve értékelheti is az adott filmet/sorozatot 5 csillagos rendszerrel.
-        <br>Ezáltal a felhasználó könnyen hozzájuthat az általa keresett információhoz a filmekkel kapcsolatban, az összefoglalóknak köszönhetően felidézheti a kedvenc pillanatait, illetve átláthatja a trilógiák és a sorozatok idővonalát, amely a megjelenési évek és a történeti kronológia eltérése miatt nem egyszerű feladat.
+        A rendszer legfőbb célja, hogy a felhasználó képes legyen tájékozódni a 2008-as Formula-1-es futam pilótáiról, pályáiról, helyezéseiről. 
         <br>Fontos cél továbbá, hogy az oldal minél több eszközről és böngészőből elérhető legyen, mindez reszponzív, felhasználóbarát és átlátható felületen, amelyet könnyű kezelni és karbantartani.
     </p>
 
     <h2>Projektterv</h2>
     <p>
         
-        A felület HTML, CSS és JavaScript nyelveken fog készülni.
+        A felület HTML, PHP, CSS és JavaScript nyelveken fog készülni.
         <br>A weboldalt három fejlesztő együttes munkájával hozzuk működésbe:
         <ul>
-        <li>Bakos Rózsa Ajándék: fejlesztés (elsősorban JS), dokumentáció, tesztelés</li>
+        <li>Bakos Rózsa Ajándék: fejlesztés (elsősorban JS,PHP), dokumentáció, tesztelés</li>
         <li>Takács László István: fejlesztés (elsősorban HTML), dokumentáció, tesztelés</li>
         <li>Konyecsny Szonja Anilla: fejlesztés (elsősorban CSS), dokumentáció, tesztelés</li>
         </ul>
@@ -51,10 +50,9 @@
         2. Üzleti folyamatok:
     <ul>
         <li>A felhasználó megkapja a weboldal elérhetőségét, majd felkeresi a felületet.</li>
-        <li>Az oldalra érve megtekintheti az első Star Wars trilógiát.</li>
-        <li>A felhasználó megtekintheti a megjelenő filmek borítóját, illetve a kártyákat megfordítva azok összefoglalóját is.</li>
-        <li>A felhasználó pontozhatja (5 csillagos rendszerben) a filmeket, vagy tovább navigálhat más csoportokra, ahol ugyanezeket a tevékenységeket ismételheti.</li>
-        <li>Végül a felhasználó visszatér az első Star Wars trilógiához.</li>
+        <li>Az oldalra érve megtekintheti a kedvcsináló, bemutatkozó oldalt.</li>
+        <li>A felhasználó innen a menü által továbbnavigálva megtekintheti a pilóták, konstruktőrök, futamok oldalait, ahol tájékozódhat egyes adatokról.</li></li>
+        <li>Végül a felhasználó visszatér a kezdőlapra.</li>
     </ul>
         3. Erőforrások:
         <ul>
@@ -67,15 +65,9 @@
 
     <h2>Követelmények</h2>
     <p>
-        Az oldal legfontosabb funkciója, amit a felhasználók elérnek, az egyes filmkártyák képei, amelyekről rögtön felismerhető az adott film, illetve a képkártyák hátoldalán lévő összefoglalás/előzetes, amely nem csak megismerteti a felhasználóval a filmet, de lehetőséget ad arra is, hogy a felhasználó értékelhesse az adott filmet 5 csillagos rendszerben.
-        A kezelőfelület webes kialakítású, gombokkal illetve lenyíló menüvel léphetünk a weblap egyik oldaláról a másikra.
-    </p>
-    <p>
         <ul>
             <li>Könnyen üzemeltethető és karbantartható rendszer, ami egyszerő felülettel és dizájnnal rendelkezik</li>
             <li>Reszponzív dizájn, ami a legtöbb platformon rendeltetésszerűen működik</li>
-            <li>Az egyszerre megjelenő filmek struktúrálása közös tulajdonságuk szerint, pl. az egy trilógiába tartozók egy lapon jelenjenek meg</li>
-            <li>Legyen lapozható JavaScript funkció segítségével</li>
             <li>Az egyes filmek megjelenítése legyen érdekes/figyelemfelkeltő, forgatható kártyák által megvalósítva</li>
           </ul> 
     </p>
@@ -123,18 +115,14 @@
         <br>- felhasználó:
         <ul>
             <li>Meglátogathatja  a weboldalt</li>
-            <li>Megtekintheti a filmkártyákat</li>
-            <li>Navigálhat a filmkártyák között</li>
-            <li>Értékelheti az egyes filmeket</li>
-            <li>Navigálhat a franchise-ok között</li>
+            <li>Megtekintheti az oldalakat és azon belül az adatokat</li>
             
         </ul>
         2. Menü-hierarchiák:
         <ul>
             <li>Kezdőoldal</li>
             <li>Navigációs fejléc</li>
-            <li>Filmkártyák</li>
-            <li>Értékelő felület</li>           
+            <li>Táblázat adatokkal</li>      
         </ul>
 
     </p>
@@ -157,21 +145,19 @@
     <p>
     <ul>
         <li>A rendszert a felhasználó egy webes felületen érheti el.</li>
-        <li>Amikor a felhasználó először fellép az oldalra, az első (eredeti) Star Wars trilógia fogadja, majd könnyedén navigálhat az egyes trilógiák, önálló filmek és sorozatok között.</li>
-        <li>A filmkártyák forgatásával a felhasználó megtekinthtei a film borítóját és a leírását.</li>
-        <li>A felhasználó értékelheti is az adott filmet/sorozatot 5 csillagos rendszer használatával.</li>
+        <li>Amikor a felhasználó először fellép az oldalra, egy kedvcsináló, bemutatkozó oldal fogadja.</li>
+        <li>Könnyedén navigálhat az egyes oldalak közt, ahol táblázatokat talál, benne adatokkal a 2008-as futamról.</li>
     </ul>
     </p>
 
     <h2>Architekturális terv</h2>
     <p>
-        A rendszer megfelelő működéséhez szükségünk van a weboldalhoz tartozó HTML, CSS és Javascript fájlokra.
-        <br>A felhasználó forgathatja a kártyákat, melyeknek mindkét oldala információt tartalmaz, illetve navigálhat a filmcsoportok között, az egyes filmekre csillagokkal (max 5) szavazhat.
+        A rendszer megfelelő működéséhez szükségünk van a weboldalhoz tartozó HTML, PHP, CSS és Javascript fájlokra.
     </p>
 
     <h2>Implementációs terv</h2>
         <p>
-            A webes felület HTML és CSS nyelven fog készülni, Javascript segítségével.
+            A webes felület HTML, PHP és CSS nyelven fog készülni, Javascript segítségével.
             A technológiákat amennyire lehet, külön-külön fájlokba rendszerezzük,
             és úgy kapcsoljuk őket össze a jobb átláthatóság és a többszöri könnyebb felhasználhatóság érdekében.
         </p>
